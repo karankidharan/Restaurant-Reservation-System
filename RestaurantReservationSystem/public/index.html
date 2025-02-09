@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Reservation System</h1>
+        <h3 id="seatsLeft">Seats Left: 50000</h3>
+
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Customer Name" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="number" id="guestCount" placeholder="Number of Guests" required min="1">
+            <button type="submit">Reserve Table</button>
+        </form>
+
+        <table id="reservationTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Guests</th>
+                    <th>Check-in Time</th>
+                    <th>Checkout Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
